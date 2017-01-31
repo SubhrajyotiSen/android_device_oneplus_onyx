@@ -51,6 +51,9 @@ TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := cm_onyx_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/onyx
 
+# Add QC Video Enhancements flag
+TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
