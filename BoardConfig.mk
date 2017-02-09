@@ -51,6 +51,7 @@ TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := cm_onyx_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/onyx
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Add QC Video Enhancements flag
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
