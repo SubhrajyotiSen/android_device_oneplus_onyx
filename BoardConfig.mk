@@ -19,7 +19,6 @@
 
 PLATFORM_PATH := device/oneplus/onyx
 
-XPERIENCE_OPTIMIZATION := false
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 
