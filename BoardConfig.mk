@@ -16,7 +16,7 @@
 #
 
 # inherit from Oppo common
--include device/oppo/common/BoardConfigCommon.mk
+#-include device/oppo/common/BoardConfigCommon.mk
 
 BOARD_PATH := device/oneplus/onyx
 
@@ -88,8 +88,8 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # CM Hardware
-BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/cmhw
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+#BOARD_HARDWARE_CLASS += device/oneplus/onyx/cmhw
+#TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
