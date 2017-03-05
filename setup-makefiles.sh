@@ -44,7 +44,7 @@ write_headers
 write_makefiles "$MY_DIR"/proprietary-files.txt
 
 # Adreno Blobs
-printf '\n%s\n' "\$(call inherit-product, vendor/qcom/binaries/msm8974/graphics/graphics-vendor.mk)" >> "$PRODUCTMK"
+\$(shell mkdir -p \$(PRODUCT_OUT)/system/vendor/lib/egl && pushd \$(PRODUCT_OUT)/system/vendor/lib > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
 
 # We are done!
 write_footers
